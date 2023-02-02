@@ -1,0 +1,12 @@
+<html>
+<head>
+
+</head>
+<body>
+<h1>Home</h1>
+{{data.Name}}
+{{data.Age}}
+<a href="{% url 'app13:update' data.id %}">update</a>
+<a href="{% url 'app13:logouts' %}">logout</a>
+</body>
+</html>

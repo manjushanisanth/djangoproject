@@ -1,0 +1,28 @@
+<html>
+{% load static %}
+<head>
+
+</head>
+<body>
+{% for msg in messages %}
+{{msg}}
+{% endfor %}
+<table>
+<tr>
+
+<th>PHOTO</th>
+
+</tr>
+
+<tr>
+    {% for d in data %}
+<td>
+<a href="{% url 'app13:displayimg' d.id %}"><img src="{{d.Photo.url}}" height="250px" width="400px"></a>
+
+</td>
+
+{% endfor %}
+</tr>
+</table>
+</body>
+</html>
